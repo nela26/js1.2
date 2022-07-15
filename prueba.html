@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO TARJETA JS</title>
+
+    <!--favicon-->
+    <link rel="icon" type="iconos/png" href="assets/img/estrella.jpg">
+
+    <!--llamado a archivo normalize.css-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--llamado al css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--tarjeta a rellenar-->
+    <div class="cont">
+        <div>
+            <img class="img-product" src="assets/img/laptodesafio.webp" alt="foto de laptop amd">
+            <p>
+                Laptop Gamer AMD
+            </p>
+            <input type="text" class="input" id="quantity" placeholder="Escribe la cantidad">
+
+            <!--Formulario de colores disponibles-->
+            <form action="">
+                <p>Seleccione un Color: <br>
+                    <select id="text0">
+                        <option value="red">Rojo</option>
+                        <option value="yellow">Amarillo</option>
+                        <option value="blue">Azul</option>
+                        <option value="gray">Gris</option>
+                        <option value="green">Verde</option>
+                        <option value="purple">Morado</option>
+                        <option value="black">Negro</option>
+                        <option value="white" selected>Blanco</option>
+                </select>
+                </p>
+            </form>
+
+            <form action="">
+                <p>Precio:$ <br>
+                    <select id="price">
+                        <option value="100000">100000</option>
+                        <option value="200000">200000</option>
+                        <option value="300000">300000</option>
+                        <option value="400000" selected>400000</option>
+                </select>
+                </p>
+            </form>
+            <!--FUNCIONES: ONCLICK= get-->
+            <input type="button" class="boton" onclick="get()" value="CALCULAR">
+        </div>
+    </div>
+    <!--cuadro resultados-->
+    <div class="result">
+        <div>
+            <!--precio y cantidad-->
+            <p>
+                Total a Pagar: $
+                <span id="total"></span>
+            </p>
+            <p>
+                Cantidad:
+                <span id="quantity1">0</span></p>
+            </p>
+
+            <!--selector de color-->
+            <p>Color:
+                <span id="text"></span>
+                <div id="textfinal"></div>
+            </p>
+        </div>
+    </div>
+    <!--llamado al JS-->
+    <script src=" assets/js/prueba.js "></script>
+</body>
+
+</html>
